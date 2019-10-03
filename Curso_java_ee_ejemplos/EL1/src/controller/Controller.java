@@ -25,9 +25,12 @@ public class Controller extends HttpServlet {
 		String noEmp = request.getParameter("noEmpleado");
 		Empleado pagoBean = new Empleado(Integer.parseInt(noEmp));
 		// Llenamos JavaBean (podriamos utilizar una bd)
-		pagoBean.setNombre("Jose Antonio");
-		pagoBean.setHorasTrabajadas(4);
-		pagoBean.setPrecioHora(75);
+//		pagoBean.setNombre("Jose Antonio");
+//		pagoBean.setHorasTrabajadas(4);
+//		pagoBean.setPrecioHora(75);
+		pagoBean.setNombre(request.getParameter("nombre"));
+		pagoBean.setHorasTrabajadas(Integer.parseInt(request.getParameter("horasT")));
+		pagoBean.setPrecioHora(Integer.parseInt(request.getParameter("precioH")));
 		request.setAttribute("pago", pagoBean);
 		RequestDispatcher rd = request.getRequestDispatcher("salario.jsp");
 		rd.forward(request, response);

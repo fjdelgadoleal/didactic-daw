@@ -12,6 +12,6 @@ https://docs.oracle.com/javaee/7/tutorial/jsf-el001.htm#BNAHQ
     <div>Java Server Pages</div>
     <a href="logicos.jsp">EL - Operadores Lógicos</a><br>
     <a href="aritmeticos.jsp">EL - Operadores aritméticos</a><br>    
-    <a href="Controller?noEmpleado=14">Utilizar operador con JavaBean</a><br>    
+    <a href="Controller?noEmpleado=14&nombre=JoseAntonio&horasT=4&precioH=75">Utilizar operador con JavaBean</a><br>    
   </body>
 </html>
